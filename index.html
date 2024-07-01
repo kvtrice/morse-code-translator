@@ -6,7 +6,19 @@
 			name="viewport"
 			content="width=device-width, initial-scale=1.0"
 		/>
-		<title>Morse Code Translater</title>
+		<link
+			rel="preconnect"
+			href="https://fonts.googleapis.com"
+		/>
+		<link
+			rel="preconnect"
+			href="https://fonts.gstatic.com"
+			crossorigin
+		/>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+			rel="stylesheet"
+		/>
 		<link
 			rel="stylesheet"
 			href="./css/style.css"
@@ -15,6 +27,44 @@
 			type="module"
 			src="./main.js"
 		></script>
+		<title>Morse Code Translater</title>
 	</head>
-	<body></body>
+	<body>
+		<main class="morse-code">
+			<h1 class="morse-code__heading">Morse Code Translator</h1>
+			<p class="morse-code__description">
+				Quickly translate between English and Morse Code 🔦
+			</p>
+			<div class="morse-code__translators">
+				<div class="morse-code__translators__english">
+					<label
+						for="english"
+						class="morse-code__translators__english__label"
+						>English Letters</label
+					>
+					<textarea
+						name="english"
+						id="english"
+						placeholder="Enter English letters here"
+						class="morse-code__translators__english__input"
+						rows="10"
+					></textarea>
+				</div>
+				<div class="morse-code__translators__morse">
+					<label
+						for="morse"
+						class="morse-code__translators__morse__label"
+						>Morse Code Characters</label
+					>
+					<textarea
+						name="morse"
+						id="morse"
+						placeholder="Enter Morse Code letters here"
+						class="morse-code__translators__morse__input"
+						rows="10"
+					></textarea>
+				</div>
+			</div>
+		</main>
+	</body>
 </html>

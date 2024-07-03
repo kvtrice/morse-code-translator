@@ -22,7 +22,8 @@
   align-items: center;
   width: 100%;
   margin: 0 auto;
-  max-width: 1200px;
+  max-width: 1300px;
+  gap: 1rem;
 }
 @media screen and (max-width: 800px) {
   .morse-code__translators {
@@ -46,9 +47,9 @@
   font-weight: bold;
 }
 .morse-code__translators__english__input, .morse-code__translators__morse__input {
-  padding: 0.5rem;
+  padding: 1rem;
   resize: none;
-  width: calc(100% - 2rem);
+  width: calc(100% - 3rem);
   border-radius: 5px;
   font-family: "Montserrat", sans-serif;
   color: gray;

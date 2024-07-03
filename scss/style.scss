@@ -25,7 +25,8 @@
 		@include m.flex-center;
 		width: 100%;
 		margin: 0 auto;
-		max-width: 1200px;
+		max-width: 1300px;
+		gap: 1rem;
 
 		@include m.mobile-media-query {
 			flex-direction: column;
@@ -48,9 +49,9 @@
 			}
 
 			&__input {
-				padding: 0.5rem;
+				padding: 1rem;
 				resize: none;
-				width: calc(100% - 2rem);
+				width: calc(100% - 3rem);
 				border-radius: 5px;
 				font-family: v.$primary-font;
 				color: gray;

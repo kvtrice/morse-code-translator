@@ -6,7 +6,7 @@ export const translateEnglishToMorse = englishInput => {
 	return textArray
 		.map(char => {
 			if (char === " ") {
-				return "   ";
+				return " / ";
 			}
 
 			return morseChars[char] || "";
@@ -15,7 +15,7 @@ export const translateEnglishToMorse = englishInput => {
 };
 
 export const translateMorseToEnglish = morseInput => {
-	const words = morseInput.split("   ");
+	const words = morseInput.split(" / ");
 	console.log(words);
 	const characters = words.map(word =>
 		word

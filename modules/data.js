@@ -1,5 +1,5 @@
 // A to Z in Morse Code
-const morseChars = {
+export const morseChars = {
 	A: ".-",
 	B: "-...",
 	C: "-.-.",
@@ -21,6 +21,7 @@ const morseChars = {
 	S: "...",
 	T: "-",
 	U: "..-",
+	V: "...-",
 	W: ".--",
 	X: "-..-",
 	Y: "-.--",

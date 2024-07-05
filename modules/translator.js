@@ -4,13 +4,14 @@ export const translateEnglishToMorse = englishInput => {
 	const toCapitals = englishInput.toUpperCase();
 	const textArray = toCapitals.split("");
 	return textArray
-		.map(char => {
+		.reduce((acc, char) => {
 			if (char === " ") {
-				return " / ";
+				acc.push(" / ");
+			} else if (morseChars[char]) {
+				acc.push(morseChars[char]);
 			}
-
-			return morseChars[char] || "";
-		})
+			return acc;
+		}, [])
 		.join(" ");
 };
 
@@ -34,7 +35,7 @@ export const morseToEnglishLowerCase = capitalString => {
 	const wordsArr = capitalString.split(" ");
 	return wordsArr
 		.map((word, i) => {
-			if (i === 0) {
+			if (i === 0 || wordsArr[i - 1].endsWith(".")) {
 				return word.charAt(0) + word.slice(1).toLowerCase();
 			} else {
 				return word.toLowerCase();

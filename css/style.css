@@ -1,20 +1,32 @@
+@import "../css/normalize.css";
+body {
+  background: #a7b9ad;
+}
+
 .morse-code {
+  width: 100vw;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
-  font-family: "Montserrat", sans-serif;
-  margin: 0 auto;
+  font-family: "Work Sans", sans-serif;
+  margin: auto;
 }
 .morse-code__heading {
   margin-top: 3rem;
-  margin-bottom: 0;
+  margin-bottom: 4rem;
   text-transform: uppercase;
   line-height: 1.2;
+  background-color: #78877d;
+  padding: 1rem;
+  color: white;
+  border-radius: 10px;
 }
-.morse-code__description {
-  margin-bottom: 4rem;
-  font-size: 1.5rem;
+@media screen and (max-width: 800px) {
+  .morse-code__heading {
+    margin: 1rem;
+  }
 }
 .morse-code__translators {
   display: flex;
@@ -22,13 +34,12 @@
   align-items: center;
   width: 100%;
   margin: 0 auto;
-  max-width: 1300px;
-  gap: 1rem;
+  max-width: 1200px;
 }
 @media screen and (max-width: 800px) {
   .morse-code__translators {
     flex-direction: column;
-    margin: 1rem;
+    gap: 1rem;
   }
 }
 .morse-code__translators__english, .morse-code__translators__morse {
@@ -49,11 +60,52 @@
 .morse-code__translators__english__input, .morse-code__translators__morse__input {
   padding: 1rem;
   resize: none;
-  width: calc(100% - 3rem);
-  border-radius: 5px;
-  font-family: "Montserrat", sans-serif;
-  color: gray;
-  font-size: 16px;
+  width: calc(100% - 4rem);
+  border-radius: 10px;
+  font-family: "Work Sans", sans-serif;
+  font-weight: 600;
+  color: black;
+  font-size: 20px;
+}
+.morse-code__translators__english__input::placeholder, .morse-code__translators__morse__input::placeholder {
+  font-weight: 400;
+  color: rgb(188, 186, 186);
+}
+
+.index {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  justify-content: center;
+  margin: 2rem;
+  gap: 1rem;
+  padding-bottom: 2rem;
+}
+.index__item {
+  display: flex;
+  flex-direction: row;
+  width: 140px;
+  text-align: left;
+  background-color: white;
+  border-radius: 10px;
+  color: black;
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 0.2em;
+  overflow: hidden;
+}
+.index__item__key {
+  text-align: center;
+  padding: 0.5rem;
+  background-color: #78877d;
+  height: 100%;
+  width: 20%;
+  color: white;
+}
+.index__item__value {
+  text-align: center;
+  padding: 0.5rem;
 }
 
 /*# sourceMappingURL=style.css.map */

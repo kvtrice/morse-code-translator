@@ -16,7 +16,7 @@
 			crossorigin
 		/>
 		<link
-			href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+			href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
 			rel="stylesheet"
 		/>
 		<link
@@ -32,9 +32,6 @@
 	<body>
 		<main class="morse-code">
 			<h1 class="morse-code__heading">Morse Code Translator</h1>
-			<p class="morse-code__description">
-				Quickly translate between English and Morse Code 🔦
-			</p>
 			<div class="morse-code__translators">
 				<div class="morse-code__translators__english">
 					<label
@@ -45,7 +42,7 @@
 					<textarea
 						name="english"
 						id="english"
-						placeholder="Enter English letters here"
+						placeholder="Start typing english letters..."
 						class="morse-code__translators__english__input"
 						rows="10"
 					></textarea>
@@ -59,12 +56,16 @@
 					<textarea
 						name="morse"
 						id="morse"
-						placeholder="Enter Morse Code letters here"
+						placeholder="Start typing morse cose characters..."
 						class="morse-code__translators__morse__input"
 						rows="10"
 					></textarea>
 				</div>
 			</div>
+			<div
+				class="index"
+				id="index"
+			></div>
 		</main>
 	</body>
 </html>

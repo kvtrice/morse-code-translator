@@ -1,3 +1,4 @@
+import { createIndex } from "./modules/dom-utils.js";
 import {
 	morseToEnglishLowerCase,
 	translateEnglishToMorse,
@@ -19,3 +20,5 @@ morseTextBox.addEventListener("input", e => {
 	const cleanedEnglishText = morseToEnglishLowerCase(capitalisedEnglishText);
 	englishTextBox.value = cleanedEnglishText;
 });
+
+createIndex();
